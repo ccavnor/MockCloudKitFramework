@@ -328,7 +328,7 @@ func test_checkCloudRecordExists_partial_error() {
 ## Installation
 
 #### Import MockCloudKitFramework.framework to your project
-Adding to your project is simple via the ![Swift Package Manager](https://www.swift.org/package-manager/). From XCode just choose File -> Add packages... and point to this repository. Make sure that the project is installed as a Framework (check Project Settings -> General -> My Target -> Frameworks, Libraries, and Embedded Content). 
+Adding to your project is simple via the [Swift Package Manager](https://www.swift.org/package-manager/). From XCode just choose File -> Add packages... and point to this repository. Make sure that the project is installed as a Framework (check Project Settings -> General -> My Target -> Frameworks, Libraries, and Embedded Content). 
 
 The MockCloudKitTestFramework (the XCode project that provides examples of unit, integration, and UITesing of MockCloudKitFramework ) can be cloned and run as a standard XCode project.
 
