@@ -15,12 +15,12 @@ To close this gap, MockCloudKitFramework (MCF) creates its own Protocols and ext
 
 Here is a movie of using a simple app that lets you type a message and post that message into iCloud. The UI has no idea that we are using MCF instead of CloudKit here:
 
-<img src="https://github.com/ccavnor/MockCloudKitFramework/resources/successful_test.gif" alt="testing with success conditions" width="250"/>
+<img src="https://github.com/ccavnor/MockCloudKitFramework/tree/main/resources/successful_test.gif" alt="testing with success conditions" width="250"/>
 
 
 However, we can easily tell MCF that we want the transaction to fail with a certain error:
 
-<img src="https://github.com/ccavnor/MockCloudKitFramework/resources/failure_test.gif" alt="testing with failure conditions" width="250"/>
+<img src="https://github.com/ccavnor/MockCloudKitFramework/tree/main/resources/failure_test.gif" alt="testing with failure conditions" width="250"/>
 
 ## Requirements
 MockCloudKitFramework is built and tested for iOS 15.0 and onward only. This is to take advantage of the cleaner implementation of CKDatabaseOperation functionality. However, some "legacy" (not deprecated as of yet, but the CloudKit documentation specifies alternative CKDatabaseOperations to use) methods from CKDatabase are included in the framework. Their implementation merely returns an error through their completion handler. I opted to not mark them as throwing because that would make the mocked methods conflict with the non-throwing signatures of their CloudKit counterparts. In general, I strived to maintain all method signatures exactly as CloudKit implements them.
