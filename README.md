@@ -343,10 +343,10 @@ import MockCloudKitFramework
 That's all it takes. But the tradeoff is that you must import MCF everywhere that you import CloudKit (assuming that you want to test that module). That might be offputting to some developers. But keep in mind that all MCF code (including these protocols and their extensions) are wrapped in `#if DEBUG` pragma - so that nothing is exposed during normal runtime, only during test runs.
 But if you want to avoid the risk of importing a test dependency into production code, see the next section. 
 
-##### The (slightly) harder way
+#### The (slightly) harder way
 You can use MCF purely from your test classes. You'll just have to load the MCF protocols and their extensions into your respective targets (XCode maintains seperate environments for each target). Its up to you how and when to expose the MCF protocols and extensions, but the recommended way is to wrap them in a `#if DEBUG` block minimally. That will ensure that they are only loaded during test runs and that they will be stripped from production code via the compiler.
 
-###### Install MCF protocols
+##### Install MCF protocols
 Copy the following set of Protocols into a module in your project (NOT test) target. A good place might be your root app module (see MockCloudKitTestProject/MockCloudKitTestProjectApp.app for an example): 
 
 ```swift
@@ -452,7 +452,7 @@ public protocol CloudContainable {
 }
 #endif
 ```
-###### Protocol extensions
+##### Protocol extensions
 Then copy the following protocol extension into the same module. This extends CloudKit with a common set of Protocols as MCF:
 ```swift
 # if DEBUG
