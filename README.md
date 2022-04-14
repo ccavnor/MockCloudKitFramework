@@ -1,3 +1,6 @@
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fccavnor%2FMockCloudKitFramework%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/ccavnor/MockCloudKitFramework)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fccavnor%2FMockCloudKitFramework%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/ccavnor/MockCloudKitFramework)
+
 # ``MockCloudKitFramework``
 
 A framework for testing of CloudKit operations. It mocks CloudKit classes to provide a seamless way to test CloudKit operations in your App's code.
